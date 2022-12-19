@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class Person:
     age: int
@@ -32,6 +33,7 @@ class Car:
     engine: Engine
     driver: Driver
     marka: str
+    weight: int
 
     def start(self) -> None:
         print(f'Driver {self.driver.full_name} turns on car.')
@@ -46,7 +48,8 @@ class Car:
         print(f'{self.marka} car turning left.')
 
     def __str__(self) -> str:
-        return f'This car has class {self.carClass} with marka {self.marka} has owner {self.driver} With engine {self.engine}'
+        return f'car has class {self.carClass} with marka {self.marka}' \
+               f' and weight {self.weight}, owner {self.driver} With engine {self.engine}'
 
 
 @dataclass
