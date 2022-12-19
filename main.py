@@ -11,7 +11,7 @@ lorry = Lorry(carClass='D',
               carrying=1500)
 sport_car = SportCar(carClass='B',
                      engine=Engine(power=980, company='Nissan'),
-                     driver=Driver(age=36, full_name='Scorr Pruett',experience=10),
+                     driver=Driver(age=36, full_name='Scott Pruett',experience=10),
                      marka='BMW',
                      speed=450.5)
 
@@ -19,5 +19,17 @@ print(f'Person: {person}')
 print(f'driver: {driver}')
 print(f'engine: {engine}')
 print(f'car info: {car}')
+car.start()
+car.turnLeft()
+car.turnRight()
+car.stop()
 print(f'lorry info: {lorry}')
+lorry.start()
+lorry.turnLeft()
+lorry.turnRight()
+lorry.stop()
 print(f'sport car info: {sport_car}')
+sport_car.start()
+sport_car.turnLeft()
+sport_car.turnRight()
+sport_car.stop()
