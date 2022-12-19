@@ -46,7 +46,7 @@ class Car:
         print(f'{self.marka} car turning left.')
 
     def __str__(self) -> str:
-        return f'This car has {self.carClass} with marka {self.marka} has owner {self.driver} With engine {self.engine}'
+        return f'This car has {self.carClass} marka {self.marka} has owner {self.driver} With engine {self.engine}'
 
 
 @dataclass
